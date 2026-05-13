@@ -25,3 +25,31 @@ __This will also be bold__\
 
 ## Links
 [GitHub](http://github.com)
+
+
+## Mernaid
+flowchart TD
+
+U[User Query] --> CM[Chat Manager]
+
+CM --> R{Router}
+
+R --> S[Structured Data Agent]
+R --> U[Unstructured Data Agent]
+R --> M[Multimodal Data Agent]
+
+S --> PG[(PostgreSQL Database)]
+S --> F[Fairness Audit]
+
+U --> MDB[(MongoDB)]
+U --> VDB[(Chroma Vector DB)]
+U --> P[PII Detection]
+
+M --> B[(Azure Blob Storage)]
+M --> C[CLIP + Content Safety]
+
+S --> CM
+U --> CM
+M --> CM
+
+CM --> OUT[Final Response]
