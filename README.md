@@ -28,6 +28,7 @@ __This will also be bold__\
 
 
 ## Mernaid
+```mermaid
 flowchart TD
 
 U[User Query] --> CM[Chat Manager]
